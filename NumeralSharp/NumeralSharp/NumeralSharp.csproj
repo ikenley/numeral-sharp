@@ -2,14 +2,25 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard1.4</TargetFramework>
+    <Description>C# port of Adam W Draper's NumeralJS library</Description>
+    <RepositoryUrl>https://github.com/ikenley/numeral-sharp</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>numeraljs, number-format</PackageTags>
+    <PackageLicenseUrl>https://github.com/ikenley/numeral-sharp/blob/master/LICENSE</PackageLicenseUrl>
+    <Copyright>Copyright (C) 2017 Ian Grant Kenley</Copyright>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netstandard1.4\NumeralSharp.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>NumeralSharp.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="System.Text.RegularExpressions" Version="4.3.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="FormatFuncs\" />
   </ItemGroup>
 
 </Project>

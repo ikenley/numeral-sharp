@@ -11,7 +11,24 @@ namespace NumeralSharp
 
         public string NullFormat { get; set; }
 
+        public string DefaultFormat { get; set; }
+
+        public bool ScalePercentBy100 { get; set; }
+
         public NumeralOptions()
-        { }
+        {
+            ZeroFormat = null;
+            NullFormat = null;
+            DefaultFormat = "0.0";
+            ScalePercentBy100 = true;
+        }
+
+        public NumeralOptions(string nullFormat, string zeroFormat, string defaultFormat)
+        {
+            NullFormat = nullFormat;
+            ZeroFormat = zeroFormat;
+            DefaultFormat = defaultFormat;
+            ScalePercentBy100 = true;
+        }
     }
 }
