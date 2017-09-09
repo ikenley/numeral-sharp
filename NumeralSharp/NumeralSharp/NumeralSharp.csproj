@@ -9,6 +9,9 @@
     <PackageLicenseUrl>https://github.com/ikenley/numeral-sharp/blob/master/LICENSE</PackageLicenseUrl>
     <Copyright>Copyright (C) 2017 Ian Grant Kenley</Copyright>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Ian Kenley</Authors>
+    <Version>1.0.1</Version>
+    <PackageProjectUrl>https://github.com/ikenley/numeral-sharp</PackageProjectUrl>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
