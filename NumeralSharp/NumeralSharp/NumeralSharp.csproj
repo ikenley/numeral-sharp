@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard1.4</TargetFramework>
+    <TargetFrameworks>net35;netstandard1.4</TargetFrameworks>
     <Description>C# port of Adam W Draper's NumeralJS library</Description>
     <RepositoryUrl>https://github.com/ikenley/numeral-sharp</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
@@ -10,7 +10,7 @@
     <Copyright>Copyright (C) 2017 Ian Grant Kenley</Copyright>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Ian Kenley</Authors>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <PackageProjectUrl>https://github.com/ikenley/numeral-sharp</PackageProjectUrl>
   </PropertyGroup>
 
